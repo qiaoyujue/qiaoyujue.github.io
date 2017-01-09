@@ -1,0 +1,353 @@
+#container {
+	width: 100%;
+	margin: 30px auto;
+}
+#container .sidebar {
+	width: 25%;
+	float: right;
+}
+#container .sidebox {
+	border: 1px solid #eee;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+#container .sidebox h2 {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-indent: 8px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fafafa;
+	color: #666;
+	text-align: left;
+}
+#container .tag {
+	padding: 10px 0;
+}
+#container .tag li {
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin: 2px 0;
+	background-color: #eee;
+	text-align: left;
+	text-indent: 8px;
+}
+#container .tag a {
+	display: block;
+	color: #999;
+}
+#container .tag a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .figure {
+	padding: 10px 0;
+}
+#container figure {
+	display: inline-block;
+	padding: 4px;
+	color: #666;
+}
+#container .box {
+	padding: 10px 0;
+}
+#container .box a {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 2px 0;
+	text-align: left;
+	text-indent: 35px;
+	color: #999;
+}
+#container .box a.trea1 {
+	background: #eee url(../img/trea1.png) no-repeat 10px center;
+}
+#container .box a.trea2 {
+	background: #eee url(../img/trea2.png) no-repeat 10px center;
+}
+#container .box a.trea3 {
+	background: #eee url(../img/trea3.png) no-repeat 10px center;
+}
+#container .box a.trea4 {
+	background: #eee url(../img/trea4.png) no-repeat 10px center;
+}
+#container .list {
+	width: 75%;
+	float: left;
+}
+#container .infor {
+	height: 45px;
+	line-height: 45px;
+	background-color: #eee;
+	margin: 0 0 20px 0;
+}
+#container .information .left {
+	display: inline-block;
+	float: left;
+}
+#container .information .left li {
+	display: inline-block;
+	width: 150px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+}
+#container .information .left li:first-child {
+	background-color: #fff;
+	border-top: 2px solid #458b00;
+	position: relative;
+	left: 1px;
+}
+#container .information .left a {
+	color: #666;
+}
+#container .information .right {
+	display: inline-block;
+	padding: 0 20px 0 0;
+	float: right;
+}
+#container .information .right li {
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+#container .information .right a {
+	padding: 3px 8px;
+	color: #666;
+}
+#container .information .right a.selected, #container .information .right a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .tour {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+	position: relative;
+}
+#container .tour img {
+	transition: all 1s;
+	float: left;
+}
+#container .tour img:hover{
+	transform: translateX(111px) scale(1.1);
+	z-index: 99999;
+}
+#container .tour figcaption {
+	/*width: 528px;*/
+	/*height: 230px;*/
+	position: relative;
+	float: right;
+}
+#container .tour hgroup {
+	width: 300px;
+}
+#container .tour h2 {
+	font-size: 24px;
+	color: #333;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+}
+#container .tour h3 {
+	font-size: 16px;
+	color: #666;
+	line-height: 1.5;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+}
+#container .tour ol {
+	padding: 0 0 0 25px;
+	color: #666;
+	line-height: 2;
+}
+#container .tour mark {
+	background-color: #fff;
+	border: 1px solid #458b00;
+	border-radius: 4px;
+	padding: 0 5px;
+	color: #458b00;
+}
+#container .tour .buy {
+	position: absolute;
+	top: 5%;
+	right: 10%;
+}
+#container .tour .price {
+	color: #f60;
+	font-size: 20px;
+}
+#container .tour .price strong {
+	font-size: 36px;
+}
+#container .tour .price s {
+	font-size: 16px;
+	color: #999;
+}
+#container .tour .reserve {
+	margin: 10px 0 0 0;
+}
+#container .tour .reserve a {
+	display: block;
+	width: 152px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #f60;
+}
+#container .tour .type {
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background-color: #59b200;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#container .tour .disc {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 52px;
+	height: 52px;
+	background: url(../img/disc.png) no-repeat;
+}
+#container .tour .disc span {
+	display: block;
+	transform: rotate(45deg);
+	width: 52px;
+	height: 52px;
+	padding: 5px 0 0 0;
+	text-indent: 7px;
+	font-size: 14px;
+	color: #ff7a4d;
+}
+#container .tour footer {
+	width: 100%;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-indent: 25px;
+	background-color: #fafafa;
+	position: absolute;
+	bottom: 0;
+}
+#container .tour time {
+	color: #458b00;
+}
+#container .information .more, #container .scenery .more {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background-color: #fafafa;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+}
+#container .scenery{
+	color: #666;
+	font-size: 16px;
+}
+#container .scenery h2, {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 15px 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#container .scenery figure {
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 4px;
+	margin: 15px 5px 15px 0;
+	/*width: 435px;*/
+	text-align: left;
+}
+.scenery figure img{
+	width: 100%;
+}
+#container .scenery figcaption {
+	text-align: center;
+	padding: 5px 0;
+}
+.scenery figure img:hover,.sidebar img:hover{
+	transform: scale(1.1);
+}
+.scenery figure img,.sidebar img{
+	transition: all 1s;
+}
+/*==================================*/
+@media screen and (min-width: 1000px) {
+	.tour figcaption{
+		width: 528px;
+	}
+	.scenery section figure{
+		width: 435px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width:1000px) {
+	.scenery section figure{
+		width: 200px;
+	}
+	.tour{
+		width: 80%;
+	}
+	.tour img{
+		width: 100%;
+	}
+	.tour figcaption{
+		width: 100%;
+		float: none;
+	}
+	#container .tour img:hover{
+		transform: none;
+    }
+}
+@media screen and (max-width: 600px) {
+	.tour{
+		width: 100%;
+	}
+	.tour img{
+		width: 100%;
+	}
+	.tour figcaption{
+		width: 100%;
+		float: none;
+	}
+	.tour .buy{
+		position: relative;
+		display: none;
+	}
+	#container .tour img:hover{
+		transform: none;
+    }
+	#container .sidebar{
+		float: none;
+		width: 100%;
+	}
+	#container .list{
+		width: 100%;
+	}
+	.scenery section figure{
+		width: 100%;
+	}
+}
