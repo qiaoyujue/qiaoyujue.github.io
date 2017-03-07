@@ -1,0 +1,29 @@
+<div class="content" ng-controller="ctr">
+	<div class="detials col-lg-8">
+		<div ng-repeat="item in movie | filter:text | limitTo:1">
+			<img ng-src="{{item.images.medium}}" class="col-lg-3"/>
+			<p class="col-lg-9">
+				<h5>片名：{{item.title}}</h5>
+				<p>又名：{{item.original_title}}</p>
+				<p>类型：{{item.genres.toString()}}</p>
+				<p>导演：{{item.directors[0].name}}</p>
+				<p>上映日期：{{item.year}}</p>
+				<p>评分：{{item.rating.average}}</p>
+			</p>
+		</div>
+		<div style="height: 50px;"></div>
+	</div>
+	<div class="col-lg-4">
+		<h5>热门电影</h5>
+		<ul class="ul_aside" ng-repeat="item in movie | limitTo:10 |orderBy:'-rating.average'">
+			<li>
+				<span class="index">{{$index+1}}</span>
+				<a href="">
+					<img ng-src="{{item.images.small}}"/>
+				    <span>{{item.title}}</span>
+				</a>
+				<span class="right">{{item.year}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

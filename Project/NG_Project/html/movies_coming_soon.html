@@ -1,0 +1,34 @@
+<div class="content row" ng-controller="controller1">
+	<div class="col-lg-8">
+		<ul class="nav nav-tabs">
+			<li ng-class="{active: classFlag}" ng-click="order('-year')">
+				<a href="">最新<span class="glyphicon glyphicon-plane"></span></a>
+			</li>
+			<li ng-class="{active: !classFlag}" ng-click="order('-rating.average')">
+				<a href="">好评<span class="glyphicon glyphicon-thumbs-up"></span></a>
+			</li>
+		</ul>
+		<div class="detials">
+			<ul class="" ng-repeat="item in movies  | orderBy:flag | filter:text">
+				<li>
+					<img ng-src="{{item.images.medium}}" />
+					<h5>{{item.title}}</h5>
+					<span>{{item.genres.toString()}}</span>
+					<span class="badge">{{item.rating.average}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-lg-4">
+		<h5>热门电影</h5>
+		<ul class="ul_aside" ng-repeat="item in movies | limitTo:20 | orderBy:'-rating.average'">
+			<li>
+				<span class="index">{{$index+1}}</span>
+				<a href="">
+					<span>{{item.title}}</span>
+				</a>
+				<span class="right">{{item.year}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

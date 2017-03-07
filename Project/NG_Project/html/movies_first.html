@@ -1,0 +1,41 @@
+<div class="content row" ng-controller="controller0">
+	<div class="col-lg-8">
+		<div class="detials">
+			<h4>最新上映</h4>
+			<ul ng-repeat="item in movies">
+				<li>
+					<!--<a ui-sref="movie">-->
+						<img ng-src="{{item.images.medium}}" />
+						<h5>{{item.title}}</h5>
+						<span class="badge">{{item.rating.average}}</span>
+					<!--</a>-->
+				</li>
+			</ul>
+			<hr />
+			<h4>即将上映</h4>
+			<ul ng-repeat="item1 in movies1">
+				<li>
+					<!--<a ui-sref="movie">-->
+						<img ng-src="{{item1.images.medium}}" />
+						<h5>{{item1.title}}</h5>
+						<span class="badge">{{item1.rating.average}}</span>
+					<!--</a>-->
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<h5>热门电影</h5>
+		<ul class="ul_aside" ng-repeat="item in movies | orderBy:'-rating.average'">
+			<li>
+				<span class="index">{{$index+1}}</span>
+				<a href="">
+					<img ng-src="{{item.images.small}}"/>
+				    <span>{{item.title}}</span>
+				</a>
+				<span class="right">{{item.year}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

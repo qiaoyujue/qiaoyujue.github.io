@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>电影大全</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/utils.css" />
+	</head>
+
+	<body ng-app="module">
+		<div class="container">
+			<div class="row">
+				<h2 class="col-lg-7">电影大全</h2>
+				<div class="col-lg-5" id="search">
+					<input type="text" id="find" ng-model="text" class="col-lg-10" placeholder="站内搜索" />
+					<input type="button" ng-click="find(text)" ui-sref="movie" class="btn col-lg-2" value="搜索" />
+				</div>
+			</div>
+			<div class="navbar navbar-default">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active">
+						<a href="" ui-sref="movies_first">首页</a>
+					</li>
+					<li>
+						<a href="" ui-sref="movies_in_theaters">正在热映</a>
+					</li>
+					<li>
+						<a href="" ui-sref="movies_coming_soon">即将上映</a>
+					</li>
+					<li>
+						<a href="" ui-sref="movies_Top250">Top250</a>
+					</li>
+					<li ng-disabled>
+						<a>口碑榜</a>
+					</li>
+					<li ng-disabled>
+						<a>北美票房榜</a>
+					</li>
+					<li ng-disabled>
+						<a>新片榜</a>
+					</li>
+				</ul>
+			</div>
+			<div ui-view>
+				<h1>☹你要找的电影还未上架</h1>
+			</div>
+			<div class="footer">
+				手机电影<b>|</b>关于我们<b>|</b>网站地图<b>|</b>排行榜<b>|</b>联系我们
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/angular_1.5.8.min.js"></script>
+		<script type="text/javascript" src="../js/uiRoute.js"></script>
+		<script>
+			var module = angular.module("module", ["ui.router"]);
+			module.config(["$urlRouterProvider", "$stateProvider",
+				function($urlRouterProvider, $stateProvider) {
+					//设置默认路由
+					$urlRouterProvider.otherwise("/movies_first");
+
+					$stateProvider.state("movies_first", {
+						url: "/movies_first",
+						templateUrl: "movies_first.html",
+						controller: "controller0"
+					});
+					$stateProvider.state("movies_in_theaters", {
+						url: "/movies_in_theaters",
+						templateUrl: "movies_in_theaters.html",
+						controller: "controller"
+					});
+					$stateProvider.state("movies_coming_soon", {
+						url: "/movies_coming_soon",
+						templateUrl: "movies_coming_soon.html",
+						controller: "controller1"
+					});
+					$stateProvider.state("movies_Top250", {
+						url: "/movies_Top250",
+						templateUrl: "movies_Top250.html",
+						controller: "controller2"
+					});
+					$stateProvider.state("movie", {
+						url: "/movie",
+						templateUrl: "movie.html",
+						controller: "ctr"
+					});
+				}
+			]);
+
+			module.service("$httpService", function($window, $document) {
+				this.jsonP = function(url, callback) {
+					$window["JOSN_CALLBACK"] = callback;
+					var scriptEle = $document[0].createElement("script");
+					scriptEle.src = url;
+					$document[0].body.appendChild(scriptEle);
+
+				}
+			});
+
+			module.controller("ctr", ["$scope", "$http",
+				function($scope, $http) {
+					$http.get("top.json").success(function(data, status) {
+						$scope.movie = data.subjects;
+					});
+					$scope.find = function(text) {
+						$scope.text = text;
+						$scope.text = "";
+					}
+				}
+			]);
+			module.controller("controller0", ["$scope", "$http",
+				function($scope, $http) {
+					$http.get("in.json").success(function(data, status) {
+						$scope.movies = data.subjects;
+					});
+					$http.get("coming.json").success(function(data1, status) {
+						$scope.movies1 = data1.subjects;
+					});
+				}
+			]);
+			module.controller("controller", ["$scope", "$http", "$httpService",
+				function($scope, $http, $httpService) {
+					var now_url = "https://api.douban.com/v2/movie/in_theaters?callback=JOSN_CALLBACK&count=25";
+					$httpService.jsonP(now_url, function(data) {
+						console.log(data);
+						$scope.$apply(function() {
+							$scope.title = data.title;
+							$scope.movies = data.subjects;
+						});
+					});
+
+					$scope.classFlag = true;
+					$scope.flag = "-year";
+					$scope.order = function(t) {
+						$scope.flag = t;
+						$scope.classFlag = !$scope.classFlag;
+					}
+				}
+			]);
+			module.controller("controller1", ["$scope", "$http", "$httpService",
+				function($scope, $http, $httpService) {
+					var coming_url = "https://api.douban.com/v2/movie/coming_soon?callback=JOSN_CALLBACK&count=25";
+					$httpService.jsonP(coming_url, function(data) {
+						console.log(data);
+						$scope.$apply(function() {
+							$scope.title = data.title;
+							$scope.movies = data.subjects;
+						})
+					});
+
+					$scope.classFlag = true;
+					$scope.flag = "-year";
+					$scope.order = function(t) {
+						$scope.flag = t;
+						$scope.classFlag = !$scope.classFlag;
+					}
+				}
+			]);
+			module.controller("controller2", ["$scope", "$http", "$httpService",
+				function($scope, $http, $httpService) {
+					var top_url = "https://api.douban.com/v2/movie/top250?callback=JOSN_CALLBACK&count=25";
+					$httpService.jsonP(top_url, function(data) {
+						console.log(data);
+						$scope.$apply(function() {
+							$scope.title = data.title;
+							$scope.movies = data.subjects;
+						})
+					});
+
+					$scope.classFlag = true;
+					$scope.flag = "-year";
+					$scope.order = function(t) {
+						$scope.flag = t;
+						$scope.classFlag = !$scope.classFlag;
+					}
+				}
+			]);
+		</script>
+	</body>
+
+</html>
