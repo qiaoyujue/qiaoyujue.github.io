@@ -1,0 +1,66 @@
+body{
+	margin:  0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+#ad{
+	width: 100%;
+	height: 320px;
+	background: url(../img/fragment/FRAGMENTad.png) center bottom ;
+}
+
+#ad h1{
+	width: 50px;
+	margin-left: 220px;
+	padding-top: 50px;
+}
+
+#content{
+	width: 1100px;
+	height: 500px;
+	margin-left: 220px;
+	margin-top: 50px;
+}
+#content div:hover hr{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}
+#content div:hover p{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}  
+#content hr{
+	width: 250px;
+	color: gray;
+	opacity: 0.6;
+}
+
+#content .txt1{
+	font-size: 12px;
+	color: black;
+	opacity: 0.5;
+}
+#screen{
+	width: 200px;
+	height: 30px;
+	/*right: 200px;*/
+	float: right;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #d2cdbe;
+	
+}
+
+#txt{
+	width: 1100px;
+	border-bottom: 1px solid #d2cdbe;
+	float: left;
+	line-height: 1em;
+	/*font: 1.5em/2.2087em AlternateGotNo2D,Arial,sans-serif;*/
+}
+
+#product{
+	float: left;
+	margin-top: 15px;
+}
+
+.txt1{
+	font-size: 0.765em;
+	color: #666;
+}

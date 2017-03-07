@@ -1,0 +1,22 @@
+#header{
+	width: 600px;
+	height: 600px;
+	border: 1px solid aqua;
+}
+#q{
+	width: 600px;
+	height: 600px;
+	border: 1px solid aqua;
+}
+#w{
+	width: 160px;
+	height: 300px;
+	border: 2px solid cornflowerblue;
+}
+#e{
+	background: url(../img/beats/baiche.png) center;
+	
+}
+   url{
+   	content: open-quote  close-quote; 
+   }

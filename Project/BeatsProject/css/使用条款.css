@@ -1,0 +1,37 @@
+body{
+	margin: 0 auto ;
+	background-color: rgb(238,238,238) ; 
+}
+
+#mid{
+    width: auto;
+    height: 5150px;
+    background-color: rgb(238,238,238) ;  
+    color: #666;
+    padding-left: 10%;
+}
+
+strong{
+	color: rgb(51,51,51);
+}
+
+#content{
+	width: 55%;
+	float: left;
+}
+
+#side{
+	width: 20%;
+	float: left;
+	margin: 0 10%;
+	
+}
+
+ul a{
+	color: #666;
+	
+}
+
+a{
+	text-decoration: none;
+}

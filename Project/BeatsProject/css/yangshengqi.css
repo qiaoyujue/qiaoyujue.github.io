@@ -1,0 +1,60 @@
+body{
+	margin: 0 auto;
+}
+#main{
+	width: 100%;
+	height: 950px;
+	color: #A9A9A9;
+	background: #EEEEEE;
+}
+b a{
+	text-decoration: none;
+	color: red;
+	margin-left: 100px;
+}
+hr{
+	color: antiquewhite;
+}
+#zuo{
+	width: 710px;
+	margin: 60px 100px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+#you{
+	width: 280px;
+	margin: 100px 60px;
+	float: left;
+}
+#ss{
+	font-size: 20px;
+}
+#ss ul{
+	list-style: none;
+}
+#ss ul a{
+	color: #808080;
+	text-decoration: none;
+}
+#ss ul a:hover{
+	color: #000000;
+}
+h4 a{
+	color: #808080;
+}	
+a{
+	text-decoration: none;
+	color:red;
+}
+h5 a:hover{
+	color: #808080;
+}

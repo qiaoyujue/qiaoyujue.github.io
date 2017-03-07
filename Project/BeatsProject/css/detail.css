@@ -1,0 +1,149 @@
+body{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+img{
+	cursor: pointer;
+}
+.detail1{
+	width: 100%;
+	height: 630px;
+	background: #efebeb;
+}
+.detail1 #pic1{
+	width: 860px;
+	height: 630px;
+	
+	overflow: hidden;
+	float: left;
+	
+}
+.detail1 #pic1 div{
+	/*display: none;*/
+}
+.detail1 #pic1 img{
+	width: 860px;
+	height: 630px;
+	padding-right: 200px;
+	
+}
+.detail1 #content{
+	width: 400px;
+	height: 600px;
+	float: left;
+}
+.detail1 #content ul li{
+	font-size: 14px;
+	color: gray;
+}
+.detail1 #content input{
+	width: 43px;
+	height: 43px;
+	border: solid 1px groove;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#tab .imga{
+	width: 75px;
+	height: 50px;
+	background: white;
+}
+.xxx{
+	width: 100%;
+	height: 80px;
+}
+.xxx #tab {
+	width: 375px;
+	height: 51px;
+	background: #efebeb;
+	margin-left: 80px;
+}
+#tab img{
+	width: 75px;
+	height: 50px;
+	float: left;
+}
+
+#tab .button{
+	width: 75px;
+	height: 50px;
+	background: white;
+}
+.detail2{
+	width: 100%;
+	height: 700px;
+}
+.detail2 .con1{
+	width: 560px;
+	height: 700px;
+	margin-left: 150px;
+	float: left;
+}
+.detail2 .con1 h2{
+	font-weight: normal;
+	opacity: 0.8;
+}
+.detail2 .con1 p{
+	font-size: 14px;
+	color: gray;
+}
+.detail2 img{
+	width: 600px;
+	height: 500px;
+	margin-top: 100px;
+	float: left;
+	
+}
+.detail3{
+	width: 100%;
+	height: 350px;
+}
+.detail3 img{
+	width: 600px;
+	height: 300px;
+	
+	float: left;
+	
+}
+.detail3 .con2{
+	width: 500px;
+	float: left;
+	font-size: 14px;
+	margin-left: 200px;
+}
+.detail3 .con2 a{
+	text-decoration: none;
+	color: red;
+	font-size: 14px;
+}
+.detail3 p{
+	color: gray;
+	font-size: 14px;
+	line-height: 10px;
+}
+.detail3 b{
+	font-size: 14px;
+	color: gray;
+	font-weight: normal;
+}
+.detial4{
+	width: 100%;
+	height: 250px;
+}
+.detial4 .con41{
+	width: 300px;
+	float: left;
+	margin-left: 150px;
+}
+.detial4 .con42{
+	width: 300px;
+	float: left;
+	margin-left: 500px;
+}
+.detial4 b{
+	font-weight: normal;
+	color: gray;
+	font-size: 80px;
+}
+

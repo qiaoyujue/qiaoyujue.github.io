@@ -1,0 +1,89 @@
+body{
+	margin: 0 auto;
+}
+
+#main{
+	width: 100%;
+	height: 1550px;
+	
+}
+#QER{
+	width: 100%;
+	height: 440px;
+	background: url(../img/beats/beijing.jpg) center;
+	
+}
+#main b{
+	font-size: 50px;
+	color: #F0FFFF;
+	position: absolute;
+	left: 170px;
+	top: 130px;
+	
+}
+#we{
+	width: 1360px;
+	height: 600px;
+}
+#xx{
+	width: 500px;
+	height: 600px;
+	float: left;
+}
+.ll{
+	width:400PX ;
+	/*height: 200PX;*/
+	margin: 100PX 10PX 10PX 120PX;
+	line-height: 20px;
+	}
+.ll p{
+	font-size: 32px;
+	margin-top: 20PX;
+}
+h4{
+	color: #808080;
+}
+
+#cc img{
+	float:right;
+	position: absolute;
+	left: 600px;
+	top: 730px;
+}
+#as{
+	top: 50px;
+	width: 1360px;
+	height: 480px;
+}
+#as .tu{
+	width: 490px;
+	height: 100px;
+	float: left;
+	margin: 0PX 0PX 0PX 120PX;
+}
+#as a{
+	color:red;
+	
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+#as a:hover{
+	color: #808080;
+}
+#mn{
+	
+	position: absolute;
+	left:550px;
+	top: 1330px;
+}	
+
+
+
+
+
+
+
+
+
+

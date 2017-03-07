@@ -1,0 +1,123 @@
+.wiretwo{
+	width: 100%;
+	height: 320px;
+	background: url(../img/wireless/header_wireless_banner.jpg) bottom center;
+}
+.sel{
+    margin-left: 1052px;
+    color: gray;
+}
+.content{
+	width: 1093px;
+	height: 2700px;
+	margin-left: 136px;
+	
+}
+
+.content div{
+	width: 250px;
+	height: 300px;
+	padding-left: 10px;
+	float: left;
+}
+.content div:hover hr{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}
+.content div:hover p{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}  
+/*.content div:hover img{filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8}*/ 
+.content hr{
+	width: 250px;
+	color: gray;
+	opacity: 0.6;
+}
+
+.content p{
+	font-size: 12px;
+	color: black;
+	opacity: 0.5;
+}
+.content b{
+	font-weight: normal;
+}
+.content div h3{
+	font-size: 16px;
+}
+.content div h3 a{
+	color: red;
+    text-decoration: none;
+}
+.footer{
+	width: 100%;
+	height: 330px;
+	font-size: 14px;
+    background: black;
+}
+.footer a:hover{color: white;}
+.footer #s1 a:hover{color: white;}
+.footer #s1{
+	float: left;
+	width: 150px;
+	height: 250px;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.footer #s2{
+	width: 150px;
+	float: left;
+	height: 250px;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.footer #s3{
+	width: 150px;
+	float: left;
+	height: 250px;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.footer b{
+	margin-left: 38px;
+	text-align: center;
+	font-weight: normal;
+	color: white;
+}
+.footer ul{
+	list-style: none;
+	
+}
+.footer ul li{
+	line-height: 30px;
+}
+.footer #s1 ul li a{
+	color: red;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: gray;
+	font-weight: lighter;
+}
+.footer #s4{
+	width: 180px;
+	float: left;
+	height: 250px;
+	margin-left: 180px;
+	margin-top: 30px;
+	
+}
+.footer #s4 img{
+	width: 50px;
+	height: 50px;
+	margin-left: 35px;
+}
+.footer #s4 p{
+	margin-left: 35px;
+}
+
+
+.seven{
+	width: 100%;
+    padding-bottom: 30px;
+	color: white;
+	font-size: 12px;
+   background: black;
+   text-align: center;
+}
+

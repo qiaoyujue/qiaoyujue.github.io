@@ -1,0 +1,33 @@
+.content2{
+	width: 1093px;
+	height:2100px;
+	margin-left: 136px;
+}
+.content2 div{
+	width: 250px;
+	height: 300px;
+	padding-left: 10px;
+	float: left;
+}
+.content2 div:hover hr{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}
+.content2 div:hover p{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0} 
+.content2 hr{
+	width: 250px;
+	color: gray;
+	opacity: 0.6;
+}
+.content2 b{
+	font-weight: normal;
+}
+.content2 p{
+	font-size: 12px;
+	color: black;
+	opacity: 0.5;
+}
+.content2 div h3{
+	font-size: 16px;
+}
+.content2 div h3 a{
+	color: red;
+    text-decoration: none;
+}

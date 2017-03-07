@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Beats By Dr.Dre</title>
+		<link href="img/logo.ico" rel="icon" type="text/html"/>
+		<link rel="stylesheet" href="css/Register.css" type="text/css"/>
+		<script type="text/javascript" src="js/login.js" ></script>
+		
+	</head>
+	<body>
+		<div id="header">
+			<div id="home">
+				<a href="index.html" style=" text-decoration: none;color: red;">beats</a>
+				<a href="index.html" style=" text-decoration: none;color: lavender;">by dr.dre</a> 
+			</div>
+			<div id="logo">
+				<img src="img/logo.png"/>
+			</div>
+		</div>
+		<div id="mid">
+			<br />
+			<div id="txt1"><h2>注册您的BEATS产品</h2></div>
+			<div id="txt2">与我们分享您新 Beats 的信息并获取产品更新和特别优惠。</div>
+			<div id="register">
+				<form>
+					<table cellspacing="10">
+					<tr><td >
+						<select id="product" onchange="Redirect(this.options.selectedIndex)" style="width: 230px;height: 25px">
+							<option style="display: none;">请选择产品（必填）</option>
+			                <option value="BEATBOX">BEATBOX</option>
+			                <option value="BEATBOX PORTABLE">BEATBOX PORTABLE</option>
+			                <option value="BEATS PILL+">BEATS PILL+</option>
+			                <option value="DIDDYBEATS">DIDDYBEATS</option>
+			                <option value="EXECUTIVE">EXECUTIVE</option>
+			                <option value="HEARTBEATS">HEARTBEATS</option>
+			                <option value="HEARTBEATS 2.0">HEARTBEATS 2.0</option>
+			                <option value="MIXR">MIXR</option>
+			                <option value="PILL">PILL</option>
+			                <option value="PILL 2.0">PILL 2.0</option>
+			                <option value="PILL XL">PILL XL</option>
+			                <option value="POWERBEATS">POWERBEATS</option>
+			                <option value="POWERBEATS2">POWERBEATS2</option>
+			                <option value="POWERBEATS2 WIRELESS">POWERBEATS2 WIRELESS</option>
+			                <option value="PRO">PRO</option>
+			                <option value="SOLO">SOLO</option>
+			                <option value="SOLO2">SOLO2</option>
+			                <option value="SOLO2 WIRELESS">SOLO2 WIRELESS</option>
+			                <option value="STUDIO(2008)">STUDIO(2008)</option>
+			                <option value="STUDIO(2013)">STUDIO(2013)</option>
+			                <option value="STDIO WIRELESS">STDIO WIRELESS</option>
+			                <option value="TOUR">TOUR</option>
+			                <option value="URBEATS">URBEATS</option>
+			                <option value="WIRELESS">WIRELESS</option>
+		                </select>
+					</td></tr>
+					<tr><td id="ProductWarningMsg" style="display:none;color:red;font-size: 12px;">请先选择产品</td></tr>
+					<tr><td >
+						<select id="color" style="width: 230px;height: 25px">
+							<option style="display: none;">颜色（必填）</option>
+							<option value="1">黑色</option>
+							<option value="2">不在列表中</option>
+						</select>
+					</td></tr>
+					<tr><td style="display:none;color:red;font-size: 12px;" id='ColorWarningMsg'>颜色不能为空</td></tr>
+					<tr><td><input type="text" id="number1" placeholder="序列号（必填）" style="width: 230px;height: 25px;"/></td></tr>
+					<tr><td style="display:none;color:red;font-size: 12px;" id='NumberWarningMsg'>序列号不能为空</td></tr>
+					<tr><td><input type="text" placeholder="姓" style="width: 230px;height: 25px"/></td></tr>
+					<tr><td></td></tr>
+					<tr><td><input type="text" placeholder="名" style="width: 230px;height: 25px"/></td></tr>
+					<tr><td></td></tr>
+					<tr><td><input type="text" id="Mail" placeholder="电子邮箱（必填）" style="width: 230px;height: 25px"/></td></tr>
+					<tr><td id='MailWarningMsg' style="display:none;color:red;font-size: 12px;">请填写正确的邮箱格式</td></tr>
+					<tr><td><input type="text" id="MailBegin" placeholder="确认电子邮箱（必填）" style="width: 230px;height: 25px"/></td></tr>
+					<tr><td id='MailBeginWarningMsg' style="display:none;color:red;font-size: 12px;">两次填写不一致</td></tr>
+					<tr><td>
+						<select style="width: 230px;height: 25px">
+							<option value="中国">中国</option>
+							<option value="美国">美国</option>
+							<option value="英国">英国</option>
+							<option value="巴西">巴西</option>
+							<option value="俄罗斯">俄罗斯</option>
+							<option value="澳大利亚">澳大利亚</option>
+							<option value="日本">日本</option>
+							<option value="法国">法国</option>
+						</select>
+					</td></tr>
+					<tr><td></td></tr>
+					<tr><td><input type="text" placeholder="零售商" style="width: 230px;height: 25px"/></td></tr>
+					<tr><td></td></tr>
+					<tr><td><input type="text" placeholder="购买日期" style="width: 230px;height: 25px"/></td></tr>
+					<tr><td><input type="checkbox"/>注册Beats Army,获取独家Beats信息</td></tr>
+					<tr><td><input type="button" id="submit" value="注册我的BEATS产品>"/ style="background-color: red;"></td></tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div id="ny1">
+				<p><a href="隐私政策.html" target="_blank">隐私政策</a>&nbsp;|&nbsp;<a href="使用条款.html" target="_blank">使用条款</a></p>
+			</div>
+			<div id="ny2">
+				<p>Copyright&copy;2016 Apple Inc.保留一切权利。</p>
+			</div>
+			<div id="ny3">
+				<p>中国</p>
+			</div>
+		</div>
+		
+		
+		<!--菜单联动JS代码-->
+		<script type="text/javascript">
+			//获取一级菜单长度
+			var groups = document.getElementById("product").options.length;
+			
+			//创建数组对象
+			var group = new Array(groups)
+			for(i=0;i<groups;i++){
+				group[i] = new Array()
+			}
+			
+			//给每一个一级分类下的数据创建option
+			group[1][0] = new Option("黑色","1");   //BEATBOX
+			group[1][1] = new Option("不在列表中","2");
+			
+			group[2][0] = new Option("黑色","20");  //BEATBOX PORTABLE
+			group[2][1] = new Option("白色","21");
+			group[2][2] = new Option("红色","22");
+			group[2][3] = new Option("不在列表中","23");
+			
+			group[3][0] = new Option("黑色","30");  //BEATS PILL+
+			group[3][1] = new Option("白色","31");
+			group[3][2] = new Option("不在列表中","32");
+			
+			group[4][0] = new Option("黑色","40");   //DIDDYBEATS
+			group[4][1] = new Option("白色","41");
+			group[4][2] = new Option("粉红色","42");
+			group[4][3] = new Option("不在列表中","43");
+			
+			group[5][0] = new Option("黑色","50");    //EXECUTIVE
+			group[5][1] = new Option("银色","51");
+			group[5][2] = new Option("COLLETE","52");
+			group[5][3] = new Option("不在列表中","53");
+			
+			group[6][0] = new Option("黑色","60");    //HEARTBEATS
+			group[6][1] = new Option("白色","61");
+			group[6][2] = new Option("红色","62");
+			group[6][3] = new Option("不在列表中","63");
+			
+			group[7][0] = new Option("黑色","70");   //HEARTBEATS2.0
+			group[7][1] = new Option("金色","71");
+			group[7][2] = new Option("不在列表中","72");
+			
+			group[8][0] = new Option("黑色","80");   //MIXR
+			group[8][1] = new Option("白色","81");
+			group[8][2] = new Option("红色","82");
+			group[8][3] = new Option("玫瑰金黑色","83");
+			group[8][4] = new Option("玫瑰金白色","84");
+			group[8][5] = new Option("金色","85");
+			group[8][6] = new Option("霓虹蓝色","86");
+			group[8][7] = new Option("霓虹粉色","87");
+			group[8][8] = new Option("霓虹绿色","88");
+			group[8][9] = new Option("霓虹橙色","89");
+			group[8][10] = new Option("霓虹黄色","810");
+			group[8][11] = new Option("COLR蓝色","811");
+			group[8][12] = new Option("COLR粉色","812");
+			group[8][13] = new Option("COLR绿色","813");
+			group[8][14] = new Option("COLR黄色","814");
+			group[8][15] = new Option("COLR靛蓝色","815");
+			group[8][16] = new Option("COLR淡蓝色","816");
+			group[8][17] = new Option("不在列表中","817");
+			
+			group[9][0] = new Option("黑色","90");  //PILL
+			group[9][1] = new Option("白色","91");
+			group[9][2] = new Option("红色","92");
+			group[9][3] = new Option("银色","93");
+			group[9][4] = new Option("粉红","94");
+			group[9][5] = new Option("蓝色","95");
+			group[9][6] = new Option("ALEXANDER WANG","96");
+			group[9][7] = new Option("霓虹蓝色","97");
+			group[9][8] = new Option("霓虹粉色","98");
+			group[9][9] = new Option("霓虹绿色","99");
+			group[9][10] = new Option("霓虹橙色","910");
+			group[9][11] = new Option("霓虹黄色","911");
+			group[9][12] = new Option("PRETTY SWEET-BLACK","912");
+			group[9][13] = new Option("PRETTY SWEET-WHITE","913");
+			group[9][14] = new Option("不在列表中","914");
+			
+			group[10][0] = new Option("黑色","100");  //PILL2.0
+			group[10][1] = new Option("白色","101");
+			group[10][2] = new Option("红色","102");
+			group[10][3] = new Option("银色","103");
+			group[10][4] = new Option("粉红色","104");
+			group[10][5] = new Option("蓝色","105");
+			group[10][6] = new Option("玫瑰金黑色","106");
+			group[10][7] = new Option("玫瑰金白色","107");
+			group[10][8] = new Option("FUJIWARA","108");
+			group[10][9] = new Option("香槟色","109");
+			group[10][10] = new Option("自定义","1010");
+			group[10][11] = new Option("BARRY MCGEE RED","1011");
+			group[10][12] = new Option("亮金色","1012");
+			group[10][13] = new Option("SHADY RECORDS","1013");
+			group[10][14] = new Option("MCM","1014");
+			group[10][15] = new Option("BARRY MCGEE ORANGE","1015");
+			group[10][16] = new Option("不在列表中","1016");
+			
+			group[11][0] = new Option("黑色","110");   //PILL XL
+			group[11][1] = new Option("白色","111");
+			group[11][2] = new Option("红色","112");
+			group[11][3] = new Option("银色","113");
+			group[11][4] = new Option("粉红色","114");
+			group[11][5] = new Option("蓝色","115");
+			group[11][6] = new Option("玫瑰金黑色","116");
+			group[11][7] = new Option("玫瑰金白色","117");
+			group[11][8] = new Option("FUJIWARA","118");
+			group[11][9] = new Option("香槟色","119");
+			group[11][10] = new Option("自定义","1110");
+			group[11][11] = new Option("BARRY MAGEE RED","1111");
+			group[11][12] = new Option("亮金色","1112");
+			group[11][13] = new Option("SHADY RECORDS","1113");
+			group[11][14] = new Option("OMOTESANDO","1114");
+			group[11][15] = new Option("MCM","1115");
+			group[11][16] = new Option("BARRY MCGEE ORANGE","1116");
+			group[11][17] = new Option("不在列表中","1117");
+			
+			group[12][0] = new Option("黑色","120");   //POWERBEATS
+			group[12][1] = new Option("白色","121");
+			group[12][2] = new Option("红色","122");
+			group[12][3] = new Option("霓虹蓝色","123");
+			group[12][4] = new Option("霓虹粉色","124");
+			group[12][5] = new Option("霓虹橙色","125");
+			group[12][6] = new Option("LEBRON JAMES-GOLD","126");
+			group[12][7] = new Option("OPRAH-GREEN APPLE","127");
+			group[12][8] = new Option("不在列表中","128");
+			
+			group[13][0] = new Option("黑色","130");   //POWERBEATS2
+			group[13][1] = new Option("白色","131");
+			group[13][2] = new Option("红色","132");
+			group[13][3] = new Option("蓝色","133");
+			group[13][4] = new Option("不在列表中","134");
+			
+			group[14][0] = new Option("黑色","140");   //POWERBEATS2 WIRELESS
+			group[14][1] = new Option("白色","141");
+			group[14][2] = new Option("红色","142");
+			group[14][3] = new Option("粉红色","143");
+			group[14][4] = new Option("蓝色","144");
+			group[14][5] = new Option("自定义","145");
+			group[14][6] = new Option("COBALT BULE","146");
+			group[14][7] = new Option("JAPAN EXCLUSIVE","147");
+			group[14][8] = new Option("UNDEFEATED GREEN","148");
+			group[14][9] = new Option("BLUE SPORT","149");
+			group[14][10] = new Option("PINK SPORT","1410");
+			group[14][11] = new Option("GREEN SPORT","1411");
+			group[14][12] = new Option("BLACK SPORT","1412");
+			group[14][13] = new Option("FLASH BLUE","1413");
+			group[14][14] = new Option("SIREN RED","1414");
+			group[14][15] = new Option("SHOCK YELLOW","1415");
+			group[14][16] = new Option("KITH","1416");
+			group[14][17] = new Option("PARIS SAINT-GERMAIN","1417");
+			group[14][18] = new Option("UNDERCOVER","1418");
+			group[14][19] = new Option("不在列表中","1419");
+			
+			group[15][0] = new Option("黑色","150");   //PRO
+			group[15][1] = new Option("白色","151");
+			group[15][2] = new Option("粉红色","152");
+			group[15][3] = new Option("无尽黑色","153");
+			group[15][4] = new Option("FENDI-BLACK","154");
+			group[15][5] = new Option("FENDI-WHITE","155");
+			group[15][6] = new Option("FENDI-RED FIRE","156");
+			group[15][7] = new Option("FENDI-BULE CYAN","157");
+			group[15][8] = new Option("FENDI-YELLOW SUNFLOWER","158");
+			group[15][9] = new Option("FENDI-TRUE BLUE","159");
+			group[15][10] = new Option("LIL WAYNE-RED","1510");
+			group[15][11] = new Option("LIL WAYNE-RED-BLACK","1511");
+			group[15][12] = new Option("DETOX","1512");
+			group[15][13] = new Option("不在列表中","1513");
+			
+			group[16][0] = new Option("黑色","160");   //SOLO
+			group[16][1] = new Option("白色","161");
+			group[16][2] = new Option("红色","162");
+			group[16][3] = new Option("粉红色","163");
+			group[16][4] = new Option("亚光黑色","164");
+			group[16][5] = new Option("深蓝色","165");
+			group[16][6] = new Option("绿色","166");
+			group[16][7] = new Option("灰色","167");
+			group[16][8] = new Option("紫色","168");
+			group[16][9] = new Option("淡蓝色","169");
+			group[16][10] = new Option("亚光红色","1610");
+			group[16][11] = new Option("亚光白色","1611");
+			group[16][12] = new Option("亚光绿色","1612");
+			group[16][13] = new Option("亚光粉色","1613");
+			group[16][14] = new Option("亚光紫色","1614");
+			group[16][15] = new Option("亚光鸭绿色","1615");
+			group[16][16] = new Option("亚光淡蓝色","1616");
+			group[16][17] = new Option("PARIS SAINT-GERMAIN","1617");
+			group[16][18] = new Option("BAPE","1618");
+			group[16][19] = new Option("FUTURA","1619");
+			group[16][20] = new Option("RED EDITIONG","1620");
+			group[16][21] = new Option("不在列表中","1621");
+			
+			group[17][0] = new Option("黑色","170");   //SOLO2 
+			group[17][1] = new Option("白色","171");
+			group[17][2] = new Option("红色","172");
+			group[17][3] = new Option("粉红色","173");
+			group[17][4] = new Option("蓝色","174");
+			group[17][5] = new Option("FUJIWARA","175");
+			group[17][6] = new Option("灰色","176");
+			group[17][7] = new Option("LUXE EDITION-BALCK","177");
+			group[17][8] = new Option("LUXE EDITION-RED","178");
+			group[17][9] = new Option("LUXE EDITION-BLUE","179");
+			group[17][10] = new Option("LUXE EDITION-SILVER","1710");
+			group[17][11] = new Option("ROYAL EDITION-STONE GRAY","1711");
+			group[17][12] = new Option("ROYAL EDITION-BLUSH ROSE","1712");
+			group[17][13] = new Option("ROYAL EDITION-IMPERIAL VIOLET","1713");
+			group[17][14] = new Option("ROYAL EDITION-SAPPHIRE BLUE","1714");
+			group[17][15] = new Option("ROYAL EDITION-HUNTER GREEN","1715");
+			group[17][16] = new Option("HELLO KITTY","1716");
+			group[17][17] = new Option("不在列表中","1717");
+			
+			group[18][0] = new Option("黑色","180");   //SOLO2 WIRELESS
+			group[18][1] = new Option("白色","181");
+			group[18][2] = new Option("红色","182");
+			group[18][3] = new Option("银色","183");
+			group[18][4] = new Option("蓝色","184");
+			group[18][5] = new Option("自定义","185");
+			group[18][6] = new Option("JAPAN EXCLUSIVE","186");
+			group[18][7] = new Option("金色","187");
+			group[18][8] = new Option("深空灰色","188");
+			group[18][9] = new Option("FLASH BLUE","189");
+			group[18][10] = new Option("SIREN RED","1810");
+			group[18][11] = new Option("SHOCK YELLOW","1811");
+			group[18][12] = new Option("PARIS SAINT-GERMAIN","1812");
+			group[18][13] = new Option("YEAR OF THE MONKEY","1813");
+			group[18][14] = new Option("ROSE GOLD","1814");
+			group[18][15] = new Option("MLB EDITION-ALL STAR","1815");
+			group[18][16] = new Option("MLB EDITION-NEWYORK YANKEES","1816");
+			group[18][17] = new Option("MLB EDITION-BOSTON RED SOX","1817");
+			group[18][18] = new Option("MLB EDITION-SAN FRANCISCO GIANTS","1818");
+			group[18][19] = new Option("MLB EDITION-LOS ANGELES DODGERS","1819");
+			group[18][20] = new Option("MLB EDITION-CHICAGO CUBS","1820");
+			group[18][21] = new Option("MLB EDITION-ST.LOUIS CARDINALS","1821");
+			group[18][22] = new Option("MLB EDITION-NEW YORK METS","1822");
+			group[18][23] = new Option("MLB EDITION-DETROIT TIGERS","1823");
+			group[18][24] = new Option("MLB EDITION-ATLANTA BRAVES","1824");
+			group[18][25] = new Option("MLB EDITION-PITTSBURGH PIRATES","1825");
+			group[18][26] = new Option("MLB EDITION-KANSAS CITY ROYALS","1826");
+			group[18][27] = new Option("不在列表中","1827");
+			
+			group[19][0] = new Option("黑色","190");    //STUDIO2008
+			group[19][1] = new Option("白色","191");
+			group[19][2] = new Option("红色","192");
+			group[19][3] = new Option("银色","193");
+			group[19][4] = new Option("粉红色","194");
+			group[19][5] = new Option("蓝色","195");
+			group[19][6] = new Option("绿色","196");
+			group[19][7] = new Option("橙色","197");
+			group[19][8] = new Option("巴西","198");
+			group[19][9] = new Option("MILITARY","199");
+			group[19][10] = new Option("SELFRIDGES DENIM","1910");
+			group[19][11] = new Option("CHIEF KEEF","1911");
+			group[19][12] = new Option("MILKCRATE ATHLETICS","1912");
+			group[19][13] = new Option("STAPLE PIGEON","1913");
+			group[19][14] = new Option("ILLEST","1914");
+			group[19][15] = new Option("TRISTAN EATON","1915");
+			group[19][16] = new Option("EKOCYCLE","1916");
+			group[19][17] = new Option("TRUKFIT","1917");
+			group[19][18] = new Option("LIVERPOOL FC","1918");
+			group[19][19] = new Option("TAXI","1919");
+			group[19][20] = new Option("RED SOX","1920");
+			group[19][21] = new Option("SHAMROCK","1921");
+			group[19][22] = new Option("YAO","1922");
+			group[19][23] = new Option("不在列表中","1923");
+			
+			group[20][0] = new Option("黑色","200");   //STUDIO2013
+			group[20][1] = new Option("白色","201");
+			group[20][2] = new Option("红色","202");
+			group[20][3] = new Option("粉红色","203");
+			group[20][4] = new Option("蓝色","204");
+			group[20][5] = new Option("钛合金色","205");
+			group[20][6] = new Option("亚光黑色","206");
+			group[20][7] = new Option("MILITARY","207");
+			group[20][8] = new Option("ALEXANDER WANG","208");
+			group[20][9] = new Option("香槟色","209");
+			group[20][10] = new Option("金属灰","2010");
+			group[20][11] = new Option("橙色","2011");
+			group[20][12] = new Option("2014年夏-红白色","2012");
+			group[20][13] = new Option("2014年夏-蓝红色","2013");
+			group[20][14] = new Option("2014年夏-蓝白色","2014");
+			group[20][15] = new Option("2014年夏-黄白色","2015");
+			group[20][16] = new Option("2014年夏-亚光黑红色","2016");
+			group[20][17] = new Option("2014年夏-亚光黑绿色","2017");
+			group[20][18] = new Option("SNARKITECTURE","2018");
+			group[20][19] = new Option("PARIS SAINT-GERMAIN","2019");
+			group[20][20] = new Option("UNDFTD","2020");
+			group[20][21] = new Option("不在列表中","2021");
+			
+			group[21][0] = new Option("黑色","210");   //STUODIO WIRELESS
+			group[21][1] = new Option("白色","211");
+			group[21][2] = new Option("红色","212");
+			group[21][3] = new Option("蓝色","213");
+			group[21][4] = new Option("亚光黑色","214");
+			group[21][5] = new Option("钛合金色","215");
+			group[21][6] = new Option("亮黑色","216");
+			group[21][7] = new Option("玫瑰金白色","217");
+			group[21][8] = new Option("香槟色","218");
+			group[21][9] = new Option("自定义","219");
+			group[21][10] = new Option("亮金色","2110");
+			group[21][11] = new Option("金属灰色","2111");
+			group[21][12] = new Option("GRAPHITE","2112");
+			group[21][13] = new Option("MCM","2113");
+			group[21][14] = new Option("NEYMAR","2114");
+			group[21][15] = new Option("KITH","2115");
+			group[21][16] = new Option("PIGALLE","2116");
+			group[21][17] = new Option("MLB15-NYY","2117");
+			group[21][18] = new Option("MLB15-BOS","2118");
+			group[21][19] = new Option("MLB15-LAD","2119");
+			group[21][20] = new Option("MLB15-SFG","2120");
+			group[21][21] = new Option("MLB15-CHI","2121");
+			group[21][22] = new Option("MLB15-ASG","2122");
+			group[21][23] = new Option("STRAIGHT OUTTA COMPTON","2123");
+			group[21][24] = new Option("UNITY EDITION-RED/WHITE/BLUE","2124");
+			group[21][25] = new Option("UNITY EDITION-RED/YELLOW","2125");
+			group[21][26] = new Option("UNITY EDITION-RED/WHITE","2126");
+			group[21][27] = new Option("UNITY EDITION-GREEN/YELLOW","2127");
+			group[21][28] = new Option("UNITY EDITION-GREEN/RED","2128");
+			group[21][29] = new Option("不在列表中","2129");
+			
+			group[22][0] = new Option("黑色","220");   //TOUR
+			group[22][1] = new Option("白色","221");
+			group[22][2] = new Option("红色","222");
+			group[22][3] = new Option("钛合金色","223");
+			group[22][4] = new Option("FLASH BLUE","224");
+			group[22][5] = new Option("SIREN RED","225");
+			group[22][6] = new Option("SHOCK YELLOW","226");
+			group[22][7] = new Option("不在列表中","227");
+			
+			group[23][0] = new Option("黑色","230");   //UBEATS
+			group[23][1] = new Option("白色","231");
+			group[23][2] = new Option("红色","232");
+			group[23][3] = new Option("银色","233");
+			group[23][4] = new Option("粉红色","234");
+			group[23][5] = new Option("蓝色","235");
+			group[23][6] = new Option("亚光黑色","236");
+			group[23][7] = new Option("金色","237");
+			group[23][8] = new Option("深空灰色","238");
+			group[23][9] = new Option("ALEXANDER WANG","239");
+			group[23][10] = new Option("ROSE GOLD","2310");
+			group[23][11] = new Option("灰色","2311");
+			group[23][12] = new Option("紫色","2312");
+			group[23][13] = new Option("亮白色","2313");
+			group[23][14] = new Option("GUNMETAL","2314");
+			group[23][15] = new Option("PARIS SAINT-GRERMAIN","2315");
+			group[23][16] = new Option("不在列表中","2316");
+			
+			group[24][0] = new Option("黑色","240");   //WIRELESS
+			group[24][1] = new Option("白色","241");
+			group[24][2] = new Option("红色","242");
+			group[24][3] = new Option("银色","243");
+			group[24][4] = new Option("蓝色","244");
+			group[24][5] = new Option("淡蓝色","245");
+			group[24][6] = new Option("不在列表中","246");
+			
+			var temp = document.getElementById("color");
+			
+			function Redirect(x){
+				for(m=temp.options.length-1;m>0;m--){
+					temp.options[m] = null;
+				}
+				
+				for(i=0;i<group[x].length;i++){
+					temp.options[i] = new Option(group[x][i].text,group[x][i].value);
+				}
+				
+				temp.options[0].selected = true;
+			}
+		</script>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>华为商城-登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+	    <script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+	    <script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body>
+		<div>
+			<div class="logo">
+				<div class="sublogo"><img src="img/hw_index.png"/></div>
+				<h3>欢迎登录华为账号</h3>
+			</div>
+			<div class="con">
+				华为帐号是您用于访问所有华为服务的帐号。
+				使用华为帐号登录后，您将可以使用云服务、华为商城、
+				花粉俱乐部、应用市场、EMUI产品、华为网盘和开发者联盟。 
+			</div>
+			<div>
+				<form>
+					<input type="text" name="user" id="user" placeholder="手机号/邮箱地址" />
+					<p class="ph_err err">对不起，您输入的账号不正确</p>
+					<input type="password" name="psd" id="psd" placeholder="请输入密码"/>
+					<p class="psd_err err">密码不正确</p>
+					<div class="code_area">
+						<input type="text" name="code_txt" id="code_txt" placeholder="验证码" />
+					    <div class="code"></div>
+					    <span><b></b></span>
+					</div>
+					<div class="rember_psd">
+						<span><input type="checkbox" class="check">记住密码</span>
+						<span class="forget_psd"><a href="#">忘记密码？</a></span>
+					</div>
+					<div id="login">登录</div>
+				</form>
+			</div>
+			<div class="free_reg"><a href="register.html">免费注册</a></div>
+			<div class="other">
+				<span><a href=""><b class="qq" title="QQ"></b></a></span>
+				<span><a href=""><b class="alipay" title="支付宝"></b></a></span>
+			</div>
+		</div>
+	</body>
+</html>

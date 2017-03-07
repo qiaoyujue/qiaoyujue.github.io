@@ -1,0 +1,46 @@
+.close{
+	width: 100%;
+	height: 320px;
+	background: url(../img/fragment/FRAGMENTad.png) center bottom ;
+}
+.sel{
+    margin-left: 1052px;
+    color: gray;
+}
+.content7{
+	width: 1093px;
+	height: 2100px;
+	margin-left: 136px;
+	
+}
+
+.content7 div{
+	width: 250px;
+	height: 300px;
+	padding-left: 10px;
+	float: left;
+}
+.content7 div:hover hr{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}
+.content7 div:hover p{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}  
+/*.content div:hover img{filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8}*/ 
+.content7 hr{
+	width: 250px;
+	color: gray;
+	opacity: 0.6;
+}
+
+.content7 p{
+	font-size: 12px;
+	color: black;
+	opacity: 0.5;
+}
+.content7 b{
+	font-weight: normal;
+}
+.content7 div h3{
+	font-size: 16px;
+}
+.content7 div h3 a{
+	color: red;
+    text-decoration: none;
+}

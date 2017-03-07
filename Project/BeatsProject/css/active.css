@@ -1,0 +1,39 @@
+.active{
+	width: 100%;
+	height: 320px;
+	background:url(../img/ACTIVECOLLPG.jpg) center bottom;
+}
+.content6{
+	width: 1093px;
+	height: 900px;
+	margin-left: 136px;
+}
+
+.content6 div{
+	width: 250px;
+	height: 300px;
+	padding-left: 10px;
+	float: left;
+}
+.content6 div:hover hr{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0}
+.content6 div:hover p{filter:alpha(Opacity=100);-moz-opacity:1.0;opacity: 1.0} 
+.content6 hr{
+	width: 250px;
+	color: gray;
+	opacity: 0.6;
+}
+.content6 b{
+	font-weight: normal;
+}
+.content6 p{
+	font-size: 12px;
+	color: black;
+	opacity: 0.5;
+}
+.content6 div h3{
+	font-size: 16px;
+}
+.content6 div h3 a{
+	color: red;
+    text-decoration: none;
+}

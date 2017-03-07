@@ -1,0 +1,97 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+a{text-decoration: none;}
+body{
+	background-color: ghostwhite;
+}
+#phone_reg,#email_reg{
+	position: relative;
+	margin-top: 20px;
+}
+h4,a{
+	margin-left: 3%;
+}
+a{
+	color: rgba(3,169,244,0.8);
+}
+#phone_reg input,a{
+	display: block;
+}
+#email_reg input,a{
+	display: block;
+}
+.area_num,.user,.msg_code,.pre_next{
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin: 15px auto;
+	border: 1px solid #999;
+	border-radius: 6px;
+}
+.area_num b{
+	float: right;
+	margin-right: 3%;
+}
+.down{
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	background-color: wheat;
+	position: absolute;
+	top: 30%;
+	left: 5%;
+	display: none;
+}
+.msg_code,.pre_next{
+	display: flex;
+	border: none;
+}
+.msg_code input,.get_msgCode{
+	flex: 1;
+	border: 1px solid #999;
+	border-radius: 6px;
+	line-height: 40px;
+}
+.get_msgCode{
+	text-align: center;
+	background-color: rgba(158,158,158,0.2);
+}
+.ph_err,.code_err,.email_err,.psd_err,.repsd_err{
+	color: red;
+	margin-left: 3%;
+	display: none;
+}
+.pre,.next{
+	flex: 1;
+	text-align: center;
+	border: 1px solid #999;
+	border-radius: 6px;
+	line-height: 40px;
+	background-color: rgba(158,158,158,0.2);
+}
+.next span{
+	opacity: 0.2;
+}
+.reg_psd{
+	margin-top: 10%;
+}
+.reg_psd div{
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin: 10px auto;
+	display: flex;
+}
+.reg_psd div span{
+	flex: 1;
+}
+.reg_psd div input{
+	flex: 2;
+	border: 1px solid #999;
+	border-radius: 6px;
+}

@@ -1,0 +1,444 @@
+.main{
+	
+}
+.content{
+	height: 100%;
+}
+#goTop{
+	width: 35px;
+	height: 35px;
+	position: fixed;
+	bottom: 60px;
+	right: 15px;
+	border-radius: 50%;
+	background: url(../img/arrow_up.png) center no-repeat;
+	background-color: red;
+	opacity: 0.6;
+	display: none;
+}
+.shopping a{
+	color: black;
+}
+#header_01{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 1;
+	display: flex;
+}
+#header_01 input{
+	width: 100%;
+	height: 30px;
+	margin-left: 10px;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+.sign_1,.sign_2,.sign_3{
+	flex: 2;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+.sign_1,.sign_2{
+	background-color: red;
+}
+.sign_3{
+	background-color: lightskyblue;
+}
+#header_01 .search{
+	flex: 5;
+}
+#header_01 .shopping{
+	text-align: center;
+	flex: 3;
+}
+#slider{
+	height: auto;
+	position: relative;
+}
+#imgchange{
+	/*position: absolute;*/
+} 
+#imgchange li{
+	width: 100%;
+	display: none;
+}
+#imgchange li img{
+	width: 100%;
+}
+#circle{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 12px;
+	border-radius: 8px;
+	background: rgba(0,0,0,.2);
+	opacity: 0.6;
+}
+#circle li{
+	float: left;
+	border-radius: 50%;
+	margin: 0 2px;
+}
+.current{
+	color: white;
+} 
+/*-------------------------*/
+#header_02{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	z-index: 1;
+	background-color: white;
+}
+#header_02 .fenlei{
+	line-height: 50px;
+	flex: 1;
+}
+#header_02 input{
+	width: 100%;
+	height: 30px;
+	margin-left: 10px;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+#header_02 .search{
+	flex: 5;
+}
+#header_02 .shopping{
+	text-align: center;
+	flex: 3;
+}
+.hw #slider{
+	position: relative;
+}
+ 
+#hwImgchange li{
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#hwImgchange li img{
+	width: 100%;
+}
+.circle_2{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 12px;
+	border-radius: 8px;
+	background: rgba(0,0,0,.2);
+	opacity: 0.6;
+}
+.circle_2 li{
+	float: left;
+	border-radius: 50%;
+	margin: 0 2px;
+}
+/*-----------------*/
+#header_03{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	z-index: 1;
+	background-color: white;
+}
+#header_03 .fenlei{
+	line-height: 50px;
+	flex: 1;
+}
+#header_03 input{
+	width: 100%;
+	height: 30px;
+	margin-left: 10px;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+#header_03 .search{
+	flex: 5;
+}
+#header_03 .shopping{
+	text-align: center;
+	flex: 3;
+}
+.ry #slider{
+	position: relative;
+}
+#ryImgchange li{
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#ryImgchange li img{
+	width: 100%;
+}
+.circle_3{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 12px;
+	border-radius: 8px;
+	background: rgba(0,0,0,.2);
+	opacity: 0.6;
+}
+.circle_3 li{
+	float: left;
+	border-radius: 50%;
+	margin: 0 2px;
+}
+/*------------------*/
+#header_04{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	background-color: white;
+}
+#header_04 .fenlei{
+	flex: 1;
+}
+#header_04 .search{
+	flex: 6;
+}
+#header_04 .shopping{
+	text-align: center;
+	flex: 3;
+}
+/*-----*/
+/*#header_05{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+}
+#header_05 .headerImg{
+	flex: 3;
+}
+.headerImg span{
+	width: 60px;
+	height: 60px;
+	margin-left: 38px;
+	margin-top: 20px;
+	display: block;
+	border-radius: 50%;
+	background: red;
+}
+#header_05 .welcome{
+	flex: 7;
+}
+.welcome a{
+	margin-left: 5px;
+	font-size: 12px;
+	color: #999;
+}*/
+
+.fenlei b{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../img/arrow_left.png) no-repeat center;
+	margin: 0 auto;
+	opacity: 0.6;
+}
+/*-----------------------------*/
+
+
+.con{
+	width: 100%;
+}
+.index{
+	width: 100%;
+}
+.index .index_tj{
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+.index_tj div{
+	font-size: 12px;
+	flex: 1;
+	border-right: 1px solid rgba(160,160,160,0.5);
+	text-align: center;
+}
+.index_tj div a{
+	color: black;
+}
+.index_tj div a span{
+	font-size: 10px;
+	display: block;
+}
+.index_tj div img{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+.clearfix:after{
+	display: block;
+	content: ".";
+	clear: both;
+	height: 0;
+    visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}
+.haha{
+	width: 100%;
+	height: 30px;
+	padding: 20px 0;
+	display: flex;
+}
+.haha div{
+	flex: 1;
+	text-align: center;
+}
+.haha div a img{
+	height: 30px;
+	margin: 0 auto;
+	display: block;
+}
+.adver{
+	border-top: 1px solid #DCDCDC;
+	margin: 10px 0;
+	padding: 5px 0;
+	overflow: hidden;
+}
+.adver img{
+	height: 15px;
+	margin-left: 10px;
+}
+.adver span{
+	color: #aaa;
+	font-size: 12px;
+}
+.index_jp .line_1,.line_2{
+	width: 100%;
+	display: flex;
+}
+.index_jp div a{
+	flex: 1;
+	text-align: center;
+	color: black;
+	border-right: 1px solid rgba(160,160,160,0.5);
+	border-bottom: 1px solid rgba(160,160,160,0.5);
+}
+.h{
+	color: #999;
+}
+.red{
+	color: red;
+}
+.index_jp div a img{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+.line{
+	width: 100%;
+	display: flex;
+}
+.line a{
+	flex: 1;
+	text-align: center;
+	color: black;
+	border-right: 1px solid rgba(160,160,160,0.5);
+	border-bottom: 1px solid rgba(160,160,160,0.5);
+}
+.line a img{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+#footer{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	background: ghostwhite;
+}
+#footer div{
+	flex: 1;
+	text-align: center;
+	line-height: 50px;
+}
+#footer a{
+	font-size: 10px;
+	color: black;
+}
+#footer b{
+	height: 15px;
+	display: block;
+}
+b img{
+	height: 15px;
+}
+.cl_icon img{
+	width: 20px;
+	height: 15px;
+}
+i{
+	height: 15px;
+	margin-right: 5px;
+}
+i img{
+	height: 20px;
+}
+/*---------------------*/
+.classified{
+	width: 100%;
+	display: flex;
+}
+.side_nav{
+	height: 100%;
+	position: fixed;
+	background-color: white;
+	flex: 1;
+}
+.side_nav ul li{
+	text-align: center;
+	line-height: 60px;
+}
+.detail_classified{
+	flex: 2;
+}
+.detail{
+	height: 100%;
+	background-color: rgba(220,220,220,0.26);
+	display: none;
+}
+.detail ul li{
+	text-align: center;
+	line-height: 80px;
+	border-bottom: 1px solid rgba(160,160,160,0.5);
+}
+.detail_show{
+	display: block;
+}
+.side_nav_color{
+	color: red;
+	background-color: rgba(220,220,220,0.26);
+}
+

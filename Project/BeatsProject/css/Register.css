@@ -1,0 +1,99 @@
+body{
+	margin: 0 auto;
+}
+
+#header{
+	width: 100%;
+	height: 84px;
+	background-color: #1e1e1e;
+}
+
+#home{
+	height: 16px;
+	width: 150px;
+	padding-top: 25px;
+	padding-left: 20px;
+	float: left;
+}
+
+#logo{
+	padding-top: 15px;
+	padding-left: 38%;
+	float: left;
+}
+
+#mid{
+	width: 100%;
+	height: 850px;
+	background-color: #333;
+	/*position: absolute;*/
+}
+
+#txt1{
+	color: #fff;
+	text-align: center;
+	margin-top: -50px;
+}
+
+h2{
+	font:  80px/85px "PlacardMTPro-Cond",sans-serif;
+}
+
+#txt2{
+	color: #aaa;
+	text-align: center;
+	margin-top: -60px;
+	
+}
+
+table{
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/*table td{
+	height: 5px;
+}*/
+#mid #register table tr td select{
+	
+	border: solid 1px gainsboro;
+	border-radius: 13px;
+}
+#mid #register table tr td input{
+	
+	border: solid 1px gainsboro;
+	border-radius: 13px;
+}
+#footer{
+	width: 100%;
+	height: 70px;
+	background: #2C2C2C;
+	position: absolute;
+	text-align: center;	
+}
+
+#ny1{
+	width: 200px;
+	margin: 0 auto;
+	float: left;
+}
+
+#ny1 a{
+	text-decoration: none;
+	color: #fff !important;
+}
+
+#ny2{
+	width: 500px;
+	float: left;
+	color: #969696;
+	margin-left: 320px;
+}
+
+#ny3{
+	width: 80px;
+	float: right;
+	color: #969696;
+}

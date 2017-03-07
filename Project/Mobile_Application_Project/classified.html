@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/utils.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<script>
+			$(function () {
+				$(".side_nav li").click(function () {
+			        var $sIndex = $(this).index();
+			        $(this).addClass("side_nav_color").siblings().removeClass("side_nav_color");
+			        $(".detail").removeClass("detail_show");
+			        $(".detail").eq($sIndex).addClass("detail_show");
+	            });
+	            $("#footer a").click(function () {
+					$(this).addClass("color").siblings().removeClass("color");		
+				});
+				$(".fenlei").click(function () {
+					history.back();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<div class="main">
+				<div id="header_04">
+					<div class="fenlei"><b></b></div>
+				    <div class="search">商品分类</div>
+				    <div class="shopping"><i><img src="img/car.png"/></i></div>
+			    </div>
+			    <div style="height: 50px;"></div>
+			    <div class="content classified">
+			    	<div class="side_nav">
+			    		<ul>
+			    			<li class="side_nav_color"><a>手机</a></li>
+			    			<li><a>笔记本&平板</a></li>
+			    			<li><a>穿戴</a></li>
+			    			<li><a>智能家居</a></li>
+			    			<li><a>专属配件</a></li>
+			    			<li><a>通用配件</a></li>
+			    		</ul>
+			    	</div>
+			    	<div class="detail_classified">
+			    		<div class="detail detail_show" id="phone">
+			    			<ul>
+			    				<li>
+			    					<div>荣耀</div>
+			    				</li>
+			    				<li>
+			    					<div>荣耀畅玩系列</div>
+			    				</li>
+			    				<li>
+			    					<div>华为Mate/P系列</div>
+			    				</li>
+			    				<li>
+			    					<div>华为nova</div>
+			    				</li>
+			    				<li>
+			    					<div>华为G系列</div>
+			    				</li>
+			    				<li>
+			    					<div>华为畅享系列</div>
+			    				</li>
+			    			</ul>
+			    		</div>
+			    		<div class="detail" id="note">
+			    			<ul>
+			    				<li>
+			    					<div>平板电脑</div>
+			    				</li>
+			    				<li>
+			    					<div>MateBook</div>
+			    				</li>
+			    				<li>
+			    					<div>扩展坞</div>
+			    				</li>
+			    				<li>
+			    					<div>触控笔</div>
+			    				</li>
+			    				<li>
+			    					<div>二合一键盘</div>
+			    				</li>
+			    			</ul>
+			    		</div>
+			    		<div class="detail" id="cd">
+			    			<ul>
+			    				<li>
+			    					<div>手环</div>
+			    				</li>
+			    				<li>
+			    					<div>手表</div>
+			    				</li>
+			    			</ul>
+			    		</div>
+			    		<div class="detail" id="smart_home">
+			    			<ul>
+			    				<li>
+			    					<div>子母路由</div>
+			    				</li>
+			    				<li>
+			    					<div>电视盒子</div>
+			    				</li>
+			    				<li>
+			    					<div>路由器</div>
+			    				</li>
+			    				<li>
+			    					<div>电力猫</div>
+			    				</li>
+			    				<li>
+			    					<div>随行WiFi</div>
+			    				</li>
+			    				<li>
+			    					<div>HUAWEI HILink生态产品</div>
+			    				</li>
+			    			</ul>
+			    		</div>
+			    		<div class="detail" id="personal_parts">
+			    			<ul>
+			    				<li>
+			    					<div>保护壳</div>
+			    				</li>
+			    				<li>
+			    					<div>保护套</div>
+			    				</li>
+			    				<li>
+			    					<div>贴膜</div>
+			    				</li>
+			    				<li>
+			    					<div>盒子专属配件</div>
+			    				</li>
+			    				<li>
+			    					<div>表带</div>
+			    				</li>
+			    				<li>
+			    					<div>电容笔</div>
+			    				</li>
+			    			</ul>
+			    		</div>
+			    		<div class="detail" id="commom_parts">
+			    			<ul>
+			    				<li>
+			    					<div>音箱</div>
+			    				</li>
+			    				<li>
+			    					<div>移动电源</div>
+			    				</li>
+			    				<li>
+			    					<div>充电器/线材</div>
+			    				</li>
+			    				<li>
+			    					<div>U盘/存储卡</div>
+			    				</li>
+			    				<li>
+			    					<div>耳机</div>
+			    				</li>
+			    				<li>
+			    					<div>自拍杆/支架</div>
+			    				</li>
+			    				<li>
+			    					<div>排插</div>
+			    				</li>
+			    				<li>
+			    					<div>摄像头</div>
+			    				</li>
+			    				<li>
+			    					<div>智能硬件</div>
+			    				</li>
+			    				<li>
+			    					<div>生活周边</div>
+			    				</li>
+			    			</ul>
+			    			<div style="height: 50px;"></div>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<div id="footer">
+				<div class="index_page color">
+					<a href="index.html"><b class="home"><img src="img/home.png"/></b>首页</a>
+				</div>
+				<div class="hw_page">
+					<a href="huawei.html"><b><img src="img/hw.png"/></b>华为</a>
+				</div>
+				<div class="ry_page">
+					<a href="rongyao.html"><b><img src="img/ry.png"/></b>荣耀</a>
+				</div>
+				<div class="classified_page">
+					<a href="classified.html" style="color: red;"><b class="cl_icon"><img src="img/list.png"/></b>分类</a>
+				</div>
+				<div class="my_page">
+					<a><b class="my_icon"><img src="img/profile.png"/></b>我的</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
