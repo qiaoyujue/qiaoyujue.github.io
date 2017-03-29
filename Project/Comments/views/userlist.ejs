@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>所有成员</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/jumbotron.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 120px;
+        }
+
+        .one {
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+<% include header.ejs %>
+
+<div class="container">
+    <h1>所有成员</h1>
+    
+    <div class="row col-lg-6">
+        <% for(var i = 0 ; i < suoyouchengyuan.length ; i++){ %>
+            <div class="one" style="overflow:hidden;">
+                <a target="_blank" href="/user/<%= suoyouchengyuan[i].username %>">
+                    <p style="float: left;"><img src="/avatar/<%= suoyouchengyuan[i].avatar %>" alt=""/></p>
+                    <p style="float: left;"> <%= suoyouchengyuan[i].username %></p>
+                </a>
+            </div>
+
+        <% } %>
+    </div>
+</div>
+
+<hr>
+
+</div>
+
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

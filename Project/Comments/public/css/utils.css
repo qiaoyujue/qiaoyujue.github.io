@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-weight: bold;
+	
+}
+ul {
+	list-style: none;
+}
+.detials, ul li{
+	position: relative;
+}
+h4{
+	font-weight: bold;
+	border-bottom: 1px solid #999;
+}
+h5{
+	font-weight: bold;
+}
+h5:hover{
+	text-decoration: underline;
+}
+li a{
+	color: #000;
+}
+
+.active{
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.detials li {
+	width: 130px;
+	height: 266px;
+	margin: 0 10px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+.detials li span{
+	font-size: 14px;
+	color: #aaa;
+}
+.detials li img {
+	width: 100%;
+	height: 182px;
+}
+
+#search {
+	margin-top: 20px;
+}
+#search #find{
+	height: 33px;
+}
+.badge {
+	width: 30px;
+	height: 20px;
+	border-radius: 0;
+	color: #fff;
+	background-color: orangered;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.right {
+	position: absolute;
+	right: 0;
+}
+
+.ul_aside li {
+	line-height: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.ul_aside img{
+	width: 40px;
+}
+.index{
+	margin-right: 10px;
+}
+
+.footer{
+	margin: 20px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+.footer b{
+	margin: 0 10px;
+}
